@@ -1,7 +1,7 @@
 name: animated_react_button
 description: A Flutter package for animated react button such as favorite heart, like and other reactions.
 version: 0.0.1
-homepage:
+homepage: https://github.com/emantggw/animated_react_button
 
 environment:
   sdk: ">=2.16.2 <3.0.0"
