@@ -42,6 +42,7 @@ class _AnimatedReactButtonState extends State<AnimatedReactButton>
   @override
   void initState() {
     super.initState();
+    _favStatus = widget.defaultColor;
     _controller =
         AnimationController(vsync: this, duration: const Duration(seconds: 1));
     CurvedAnimation curve = CurvedAnimation(
@@ -50,7 +51,7 @@ class _AnimatedReactButtonState extends State<AnimatedReactButton>
     );
     _animation = Tween<double>(begin: 0, end: _maxResaultant).animate(curve);
 
-    WidgetsBinding.instance?.addPostFrameCallback(handleRenderBox);
+    WidgetsBinding.instance!.addPostFrameCallback(handleRenderBox);
 
     _controller.addListener(bubbleHandler);
   }
