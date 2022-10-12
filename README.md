@@ -15,9 +15,9 @@ A beautiful animated reaction button. The cool thing is you can customize your o
 
 ## Screenshots
 
-<img src="https://github.com/emantggw/animated_react_button/assets/screenshots/favorite_heart.gif" />
+<img src="https://github.com/emantggw/animated_react_button/blob/main/assets/screenshots/favorite_heart.gif" />
 
-<img src="https://github.com/emantggw/animated_react_button/assets/screenshots/favorite_heart_real_example.gif" />
+<img src="https://github.com/emantggw/animated_react_button/blob/main/assets/screenshots/favorite_heart_real_example.gif" />
 
 ## Features
 
