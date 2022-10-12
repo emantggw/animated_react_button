@@ -13,6 +13,12 @@ and the Flutter guide for
 
 A beautiful animated reaction button. The cool thing is you can customize your own favorite reaction icon, color, icon size.
 
+## Screenshots
+
+<img src="https://github.com/emantggw/animated_react_button/assets/screenshots/favorite_heart.gif" />
+
+<img src="https://github.com/emantggw/animated_react_button/assets/screenshots/favorite_heart_real_example.gif" />
+
 ## Features
 
 Reacting the action.
