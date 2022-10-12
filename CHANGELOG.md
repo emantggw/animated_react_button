@@ -6,3 +6,6 @@
 
 ## 0.0.3
 - Screenshots, and contact info added.
+
+## 0.0.4
+- Example file and other docmentation info added.
