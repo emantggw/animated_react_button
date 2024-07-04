@@ -9,3 +9,6 @@
 
 ## 0.0.4
 - Example file and other docmentation info added.
+
+## 0.0.5
+- Enable or disable tap for animation (adding bool enableTap default is true)
