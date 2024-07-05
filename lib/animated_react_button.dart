@@ -15,14 +15,18 @@ class AnimatedReactButton extends StatefulWidget {
   final Function onPressed;
   final bool showSplash;
   final double iconSize;
+  final bool enableTap;
 
-  const AnimatedReactButton(
-      {this.defaultColor = Colors.grey,
-      this.defaultIcon = Icons.favorite,
-      required this.reactColor,
-      required this.onPressed,
-      this.showSplash = true,
-      this.iconSize = 24});
+  const AnimatedReactButton({
+    this.defaultColor = Colors.grey,
+    this.defaultIcon = Icons.favorite,
+    required this.reactColor,
+    required this.onPressed,
+    this.showSplash = true,
+    this.iconSize = 24,
+    this.enableTap = true,
+  });
+
   @override
   State<AnimatedReactButton> createState() => _AnimatedReactButtonState();
 }
@@ -51,7 +55,7 @@ class _AnimatedReactButtonState extends State<AnimatedReactButton>
     );
     _animation = Tween<double>(begin: 0, end: _maxResaultant).animate(curve);
 
-    WidgetsBinding.instance!.addPostFrameCallback(handleRenderBox);
+    WidgetsBinding.instance.addPostFrameCallback(handleRenderBox);
 
     _controller.addListener(bubbleHandler);
   }
@@ -143,7 +147,7 @@ class _AnimatedReactButtonState extends State<AnimatedReactButton>
           );
         },
         child: GestureDetector(
-          onTap: loveHandler,
+          onTap: widget.enableTap ? loveHandler : null,
           child: Icon(
             widget.defaultIcon,
             size: widget.iconSize,
